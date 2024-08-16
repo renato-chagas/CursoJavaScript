@@ -45,4 +45,23 @@ pessoa3.falar(); // Maria tem 25
 pessoa3.incrementarIdade(); // incrementa a idade
 pessoa3.falar(); // Maria tem 26
 
+//atribuição via desestruturação
+
+const pessoaOrginal = {
+    nome: 'Luiz',
+    sobrenome: 'Miranda',
+    idade: 25,
+    endereco:{
+        rua: 'Av Brasil',
+        numero: 320,
+    },
+};
+  
+const { nome = '', sobrenome} = pessoaOrginal;
+console.log(nome, sobrenome);
+
+const { endereco: { rua, numero} } = pessoaOrginal;
+console.log(rua, numero);
+
+
 

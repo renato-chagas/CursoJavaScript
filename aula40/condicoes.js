@@ -18,6 +18,7 @@ else{ // se não for nenhuma das condições acima
 /** Operador Ternario
  * precisa ter um else 
  * não da para ter mais de 2 condiçoes 
+ * condição ? true : false;
  * */ 
 
 const custoCinema = 30;
