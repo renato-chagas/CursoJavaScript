@@ -23,7 +23,7 @@ console.log(typeof alunos); // Retorna object.
 console.log(alunos instanceof Array); // Retorna true, verifica se é um array.
 
 const numeros = [1, 2, 3];
-const [primeiro, segundo] = numeros; //retorna 1, 2, 3
+const [primeiro, segundo] = numeros; //retorna 1, 2
 console.log(primeiro, segundo); 
 
 const [um, , tres] = numeros; //retorna 1, 3
