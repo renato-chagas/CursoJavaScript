@@ -1,79 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-   
-  </head>
-  <body>
-    <div class="base-template">
-      <div class="tittle">
-        <h1>Timer</h1>
-      </div>
-      <div class="timer">
-        <h1 class="cloack">00:00:00</h1>
-        <div class="botoes">
-          <button class="pause">Pause</button>
-          <button class="start">Iniciar</button>
-          <button class="reset">Resetar</button>
-        </div>
-      </div>
-    </div>
-    <script src="../aula66/timer.js"></script>
-  </body>
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100vw;
-      height: 100vh;
-    }
-
-    .base-template {
-      width: 40%;
-      height: 30%;
-      border-radius: 50px;
-      background-color: black;
-    }
-
-    .tittle {
-      display: flex;
-      width: 100%;
-      height: 30%;
-      color: white;
-      justify-content: center;
-    }
-
-    .timer {
-      width: 100%;
-      height: 40%;
-    }
-
-    .cloack {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      color: white;
-    }
-
-    .botoes{
-        width: 100%;
-        height: 20%;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    .botoes > button{
-        width: 30%;
-        height: 20%px;
-        border: 0px;
-        border-radius: 10px;
-        background-color: white;
-    }
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+      body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100vw;
+          height: 100vh;
+      }
+  
+      .base-template {
+          width: 40%;
+          height: 30%;
+          border-radius: 50px;
+          background-color: black;
+      }
+  
+      h1{
+          color: white;
+          text-align: center;
+      }
+  
+      .botoes{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+      }
+  
+      body .stoped{
+          color: red;
+      }
   </style>
+</head>
+<body>
+  <div class="base-template">
+    <div class="tittle">
+        <h1>Timer</h1>
+    </div>
+    <div class="timer">
+        <h1 class="clock">00:00:00</h1>
+        <div class="botoes">
+            <button class="pause">Pause</button>
+            <button class="start">Iniciar</button>
+            <button class="reset">Resetar</button>
+        </div>
+    </div>
+</div>
+    <script src="timer.js"></script> 
+</body>
 </html>
