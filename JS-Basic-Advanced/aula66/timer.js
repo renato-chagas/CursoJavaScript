@@ -22,28 +22,6 @@ function startClock() {
     }, 1000);
 }
 
-// evento classe
-/* document.addEventListener('click', function(e){
-    const el = e.target
-
-    if(el.classList.contains('iniciar')){
-        clearInterval(timer);
-        startClock();
-        clock.classList.remove('stoped');
-    }
-
-    if(el.classList.contains('pausar')){
-        clearInterval(timer);
-        clock.classList.add('pausado');
-    }
-
-    if(el.classList.contains('zerar')){
-        clearInterval(timer);
-        clock.innerHTML = '00:00:00';
-        seconds = 0;
-    }
-}) */
-
 start.addEventListener('click', function(event) {
     clearInterval(timer);
     startClock();
@@ -58,4 +36,5 @@ pause.addEventListener('click', function(event) {
 reset.addEventListener('click', function (event){
     clearInterval(timer);
     clock.innerHTML = '00:00:00';
+    seconds = 0;
 });
